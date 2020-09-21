@@ -1,0 +1,11 @@
+# Þetta forrit skal hafa föll til stærðfræðilegra reikninga.
+# Forritið skal útbúa valmynd sem prompta notanda fyrir þau föll sem forritið inniheldur
+# Notandi skal geta valið föllin:
+# sum_natural(n_str): , sum_fibonacci(n_str): , approximate_euler(n_str):
+# og sett inn streng n_str(integer) sem gildi breytustærðar fallsins.
+# Enter option: úttakið skal promptast eftir hvert fall sem er notað
+# strengurinn x lokar forritinu, Enter option: x
+# Úttakið "Unrecognized option k" þar sem k er invalid option fyrir þetta forrit
+# 1. Valmynd falla 2a). input notanda, 2b) úttak um villuboð, 3. Túlka input notanda sem integer. Annars villuboð 4. Output.
+
+
