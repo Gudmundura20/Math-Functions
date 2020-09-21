@@ -38,17 +38,17 @@ def sum_natural(n_str):
     #return exit()
     
 menu() # Beginning of the program where the functions are represented
-
+options = 'abc'
 while True:
-    n_str = input('Enter option: ')  
-    if n_str == 'v':
+    n_str = input('Enter option: ')  # input 1
+    if not n_str in options:
         print("Unrecognized option", n_str)
-        menu()
+        menu() # option was not a string that calls a function
         n_str = input('Enter option: ')
     if n_str == 'x':
         break # the whole program ends
-    #if n_str != 
-    func_int = int(input('Enter N: '))
+    
+    func_int = int(input('Enter N: ')) # input 2
     if n_str == 'a': # notandi vill sjá fall a.
         print('Natural number sum: ',sum_natural('a'))
         continue 
