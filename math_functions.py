@@ -17,7 +17,7 @@ def menu():
     x = 'x. Exit from the program.'
     for option in (options, a, b, c, x):
         print(option)
-    
+        
 def sum_natural(n_str):     
     '''Summa náttúrulegra talna í rununni (1, n)'''
     number = 1
@@ -38,18 +38,26 @@ def sum_natural(n_str):
     #return exit()
     
 menu() # Beginning of the program where the functions are represented
-n_str = input('Enter option: ')
-func_int = int(input('Enter N: ')) # integer object for functions
 
-
-while n_str != 'x':
-    if n_str == 'a': # notandi vill sjá fall a
-        print(sum_natural('a')) 
-    n_str = input('Enter option: ')
+while True:
+    n_str = input('Enter option: ')  
+    if n_str == 'v':
+        print("Unrecognized option", n_str)
+        menu()
+        n_str = input('Enter option: ')
+    if n_str == 'x':
+        break # the whole program ends
+    #if n_str != 
     func_int = int(input('Enter N: '))
+    if n_str == 'a': # notandi vill sjá fall a.
+        print('Natural number sum: ',sum_natural('a'))
+        continue 
+    
 
     
-        
+
+    
+
 
     
 
