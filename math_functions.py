@@ -22,8 +22,8 @@ def sum_natural(n_str):
     '''Summa náttúrulegra talna í rununni (1, n)'''
     number = 1
     number_sum = 1
-    while n_int >= 2:
-        for number in range(1, n_int): # n_int er gefið frá notanda
+    while func_int >= 2:
+        for number in range(1, func_int): # func_int er gefið frá notanda
             number += 1
             number_sum += number
         return number_sum
@@ -39,14 +39,16 @@ def sum_natural(n_str):
     
 menu() # Beginning of the program where the functions are represented
 n_str = input('Enter option: ')
-n_int = int(input('Enter N: ')) 
+func_int = int(input('Enter N: ')) # integer object for functions
 
 
 while n_str != 'x':
     if n_str == 'a': # notandi vill sjá fall a
         print(sum_natural('a')) 
     n_str = input('Enter option: ')
-    n_int = int(input('Enter N: '))
+    func_int = int(input('Enter N: '))
+
+    
         
 
     
