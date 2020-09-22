@@ -48,19 +48,17 @@ while True:
     
     if n_str == 'x':
         break # the whole program ends
-    if not n_str in options:
-        print("Unrecognized option", n_str)
-        menu() # option was not a string that calls a function
-        n_str = input('Enter option: ')
-    
-    func_int = int(input('Enter N: ')) # input 2
     
     if n_str == 'a': # notandi vill sjá fall a.
+        func_int = int(input('Enter N: ')) # input 2
         print('Natural number sum:',sum_natural('a'))
         continue
     elif n_str == 'b': # notandi vill sjá fall b.
+        func_int = int(input('Enter N: ')) # input 2
         print('Fibonacci sum:',sum_fibonacci('b'))
-    
+    if not n_str in options:
+        print("Unrecognized option", n_str)
+        menu()                            # option was not a string that calls a function
     
     
 
